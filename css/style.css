@@ -34,7 +34,9 @@ mark:hover {
 }
 
 .hero-background .vertical-centered {
-    margin-top: 15vh;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .hero-background .title {
@@ -52,6 +54,7 @@ mark:hover {
     height: 80vh;
     top: 0px;
     left: 0px;
+    pointer-events: none;
 }
 
 .socials {
