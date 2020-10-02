@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    padding: 50px;
+    color: #131615;
+}
+
+mark {
+    box-shadow: #3c439b 0px -7px 0px inset;
+    transition: box-shadow 0.3s ease-in-out 0s;
+    background: none;
+}
+
+mark:hover {
+    box-shadow: #3c439b 0px -14px 0px inset;
+    transition: box-shadow 0.3s ease-in-out 0s;
+    background: none;
+}
+
+.hero-background {
+    position: relative;
+    background: url(/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 80vh;
+    max-height: 80vh;
+    color: #fff;
+}
+
+.hero-background .vertical-centered {
+    margin-top: 15vh;
+}
+
+.hero-background .title {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hero-background .description {
+    font-size: 24px;
+}
+
+#fireflies {
+    position: absolute;
+    width: 50vw;
+    height: 80vh;
+    top: 0px;
+    left: 0px;
+}
+
+.socials {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10%;
+    background-color: #fff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.socials .link {
+    margin: 0px 5px;
+    float: right;
+    transition: .4s;
+}
+
+.socials .link:hover {
+    transform: scale(0.9, 0.9);
+}
+
+.socials .icon {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.container img {
+    max-width: 450px;
+}
+
+.container .left-content {
+    display: flex;
+    justify-content: end;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.container .right-content {
+    display: flex;
+    justify-content: start;
+    margin-right: 10%;
+    text-align: right;
+}
+
+.container h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.container p {
+    font-size: 20px;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fedfc2;
+    box-shadow: 0px 0px 10px 2px #fedfc2;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.btn {
+    padding: 9px 25px;
+    background-color: #3c439b;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+    transform: scale(0.9, 0.9);
+}
+
+@media only screen and (max-width: 800px) {
+    .container img {
+        display: none;
+    }
+
+    .hero-background .title {
+        font-size: 45px;
+    }
+
+    .hero-background .description {
+        font-size: 15px;
+    }
+}
