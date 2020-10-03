@@ -1,19 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Judson:wght@400;700&display=swap');
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Archivo', sans-serif;
+}
+
+p {
+    font-family: 'Judson', sans-serif;
 }
 
 section {
+    display: flex;
     padding: 50px;
     color: #131615;
+}
+
+waves-section,
+waves-section .container {
+    background-color: #3c439b;
+    color: #fff;
 }
 
 mark {
     box-shadow: #3c439b 0px -7px 0px inset;
     transition: box-shadow 0.3s ease-in-out 0s;
     background: none;
+    font-weight: 700;
 }
 
 mark:hover {
@@ -40,7 +53,7 @@ mark:hover {
 }
 
 .hero-background .title {
-    font-size: 60px;
+    font-size: 66px;
     font-weight: 700;
 }
 
@@ -57,13 +70,11 @@ mark:hover {
     pointer-events: none;
 }
 
-.socials {
+.phone {
     position: absolute;
     bottom: 0px;
     right: 0px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
+    padding: 10px 5px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 10%;
@@ -72,19 +83,15 @@ mark:hover {
     border-top-right-radius: 4px;
 }
 
-.socials .link {
+.phone .number {
     margin: 0px 5px;
     float: right;
     transition: .4s;
+    color: #131615;
 }
 
-.socials .link:hover {
+.phone .number:hover {
     transform: scale(0.9, 0.9);
-}
-
-.socials .icon {
-    width: 30px;
-    height: 30px;
 }
 
 .container {
@@ -108,6 +115,23 @@ mark:hover {
     text-align: left;
 }
 
+.container .centered-content {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.container .centered-content .title {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.container .centered-content .vertical-centered {
+    max-width: 80vw;
+    overflow-wrap: break-word;
+}
+
+
 .container .right-content {
     display: flex;
     justify-content: start;
@@ -122,7 +146,38 @@ mark:hover {
 
 .container p {
     font-size: 20px;
+    max-width: 40vw;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.grid-item {
+    min-width: 360px;
+    min-height: 260px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    transition: all .4s ease 0s;
+}
+
+.grid-item:hover {
+    transform: scale(1.08, 1.08);
+}
+
+.grid-item .number {
+    line-height: 260px;
+    color: #3c439b;
+    font-size: 66px;
+}
+
 
 .dot {
     width: 4px;
@@ -147,6 +202,32 @@ mark:hover {
 
 .btn:hover {
     transform: scale(0.9, 0.9);
+}
+
+.shake {
+    animation: shake 2s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(15deg);
+    }
+
+    95% {
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 @media only screen and (max-width: 800px) {

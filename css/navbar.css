@@ -16,12 +16,16 @@ header {
   .nav__links a,
   .cta,
   .overlay__content a {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Archivo", sans-serif;
     font-weight: 500;
     color: #edf0f1;
     text-decoration: none;
   }
-  
+
+  .cta:hover {
+    box-shadow: 0 0px 15px rgba(109, 149, 209, .2);
+  }
+
   .nav__links {
     list-style: none;
     display: flex;
@@ -36,7 +40,7 @@ header {
   }
   
   .nav__links li a:hover {
-    color: #3c439b;
+    color: #cfcfcf;
   }
   
   /* Mobile Nav */
