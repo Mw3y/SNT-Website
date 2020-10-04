@@ -10,6 +10,12 @@ p {
     font-family: 'Judson', sans-serif;
 }
 
+h4,
+h6 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
 section {
     display: flex;
     padding: 50px;
@@ -41,8 +47,8 @@ mark:hover {
     background-size: cover;
     background-repeat: no-repeat;
     min-width: 100%;
-    min-height: 80vh;
-    max-height: 80vh;
+    min-height: 90vh;
+    max-height: 90vh;
     color: #fff;
 }
 
@@ -86,12 +92,7 @@ mark:hover {
 .phone .number {
     margin: 0px 5px;
     float: right;
-    transition: .4s;
     color: #131615;
-}
-
-.phone .number:hover {
-    transform: scale(0.9, 0.9);
 }
 
 .container {
@@ -124,6 +125,13 @@ mark:hover {
 .container .centered-content .title {
     font-size: 55px;
     font-weight: 700;
+}
+
+.container .centered-content .subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 36px;
+    font-family: 'Judson', sans-serif;
 }
 
 .container .centered-content .vertical-centered {
@@ -178,7 +186,6 @@ mark:hover {
     font-size: 66px;
 }
 
-
 .dot {
     width: 4px;
     height: 4px;
@@ -188,7 +195,6 @@ mark:hover {
     background-color: #fedfc2;
     box-shadow: 0px 0px 10px 2px #fedfc2;
     border-radius: 20px;
-    z-index: 2;
 }
 
 .btn {
