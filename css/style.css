@@ -22,6 +22,16 @@ section {
   color: #131615;
 }
 
+footer p,
+footer {
+  background-color: #3c439b;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  font-family: "Archivo", sans-serif;
+}
+
+
 waves-section,
 waves-section .container {
   background-color: #3c439b;
@@ -247,7 +257,4 @@ mark:hover {
   .hero-background .description {
     font-size: 15px;
   }
-}
-.lucas {
-  font-family: ;
 }
