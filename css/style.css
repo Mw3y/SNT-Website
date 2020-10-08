@@ -18,7 +18,7 @@ h6 {
 
 section {
   display: flex;
-  padding: 50px;
+  padding-top: 50px;
   color: #131615;
 }
 
@@ -29,6 +29,7 @@ footer {
   margin: 0;
   padding: 15px;
   font-family: "Archivo", sans-serif;
+  color: #fff;
 }
 
 
@@ -60,6 +61,10 @@ mark:hover {
   min-height: 90vh;
   max-height: 90vh;
   color: #fff;
+}
+
+.black {
+  color: #131615;
 }
 
 .hero-background .vertical-centered {
@@ -117,6 +122,7 @@ mark:hover {
 
 .container img {
   max-width: 450px;
+  padding: 25px;
 }
 
 .container .left-content {
@@ -135,12 +141,13 @@ mark:hover {
 .container .centered-content .title {
   font-size: 55px;
   font-weight: 700;
+  margin-bottom: 12px;
 }
 
 .container .centered-content .subtitle {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 36px;
+  margin-bottom: 64px;
   font-family: "Judson", sans-serif;
 }
 
@@ -163,7 +170,6 @@ mark:hover {
 
 .container p {
   font-size: 20px;
-  max-width: 40vw;
 }
 
 .grid-container {
@@ -177,12 +183,13 @@ mark:hover {
 }
 
 .grid-item {
+  display: block;
   min-width: 360px;
   min-height: 260px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .grid-item:hover {
@@ -193,6 +200,12 @@ mark:hover {
   line-height: 260px;
   color: #3c439b;
   font-size: 66px;
+}
+
+.grid-item .text {
+  display: block;
+  font-size: 18px;
+  text-align: left;
 }
 
 .dot {
