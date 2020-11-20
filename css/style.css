@@ -40,17 +40,17 @@ waves-section .container {
 }
 
 mark {
-  box-shadow: #3c439b 0px -7px 0px inset;
+  box-shadow: rgba(60, 67, 155, .8) 0px -7px 0px inset;
   transition: box-shadow 0.3s ease-in-out 0s;
   background: none;
   font-weight: 700;
 }
 
-mark:hover {
+/**mark:hover {
   box-shadow: #3c439b 0px -14px 0px inset;
   transition: box-shadow 0.3s ease-in-out 0s;
   background: none;
-}
+}*/
 
 .hero-background {
   position: relative;
@@ -190,22 +190,29 @@ mark:hover {
   border-radius: 8px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
+  overflow: hidden;
 }
 
 .grid-item:hover {
   transform: scale(1.08, 1.08);
 }
 
-.grid-item .number {
-  line-height: 260px;
-  color: #3c439b;
-  font-size: 66px;
-}
-
 .grid-item .text {
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
+  padding : 30px 15px;
+  text-align: justify;
+  text-justify: inter-word;
+  background-color: #3c439b;
+  border-radius: 8px;
+  color: #fff;
+  min-height: 30%;
+}
+
+.grid-item img {
+  max-width: 100%;
+  max-height: 300px;
 }
 
 .dot {
