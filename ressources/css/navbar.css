@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  max-height: 45px;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.cta:hover {
+  box-shadow: 0 0px 15px rgba(109, 149, 209, .2);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 10px;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #cfcfcf;
+}
+
+@media only screen and (max-width: 1461px) {
+  .nav__links {
+    font-size: 14px;
+  }
+}
